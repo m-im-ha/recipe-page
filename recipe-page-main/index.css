@@ -44,6 +44,24 @@ img {
   margin-top: 40px;
 }
 
+.intro {
+    margin-top: 0;
+}
+
+.preparation{
+  background-color: var(--RoseWhite);
+  padding: 10px;
+}
+
+.preparation ul {
+  list-style: var(--Nutmeg);
+}
+
+.preparation li {
+  padding-left: 15px;
+  line-height: 30px;
+}
+
 /* .recipe_container {
     margin: 0 auto;
   } */
