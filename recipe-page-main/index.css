@@ -9,10 +9,17 @@
   --LightGrey: hsl(30, 18%, 87%);
   --WengeBrown: hsl(30, 10%, 34%);
   --DarkCharcoal: hsl(24, 5%, 18%);
+
+  /* font families */
+  --outfit: "Outfit", sans-serif;
+  --young: "Young Serif", sans-serif;
 }
 
 html {
   box-sizing: border-box;
+  font-family: var(--outfit);
+  font-weight: 500;
+  color: var(--WengeBrown);
 }
 
 *,
@@ -25,6 +32,11 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--Eggshell);
+}
+
+h2 {
+  font-family: var(--young);
+  font-weight: 500;
 }
 
 .container {
@@ -45,32 +57,102 @@ img {
 }
 
 .intro {
-    margin-top: 0;
+  margin-top: 0;
 }
 
-.preparation{
+.preparation {
   background-color: var(--RoseWhite);
-  padding: 10px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .preparation ul {
   list-style: var(--Nutmeg);
 }
 
-.preparation li {
+.preparation li,
+.ingredients li,
+.instruction li {
   padding-left: 15px;
   line-height: 30px;
 }
 
-/* .recipe_container {
-    margin: 0 auto;
-  } */
-
-/* .intro {
-    text-align: center;
-
+.attribution {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .intro h1 {
-    text-align: left;
+  font-family: var(--young);
+  font-weight: 400;
+  color: var(--DarkCharcoal);
+}
+
+.preparation h3 {
+  color: var(--DarkRaspberry);
+}
+
+.ingredients h2,
+.instruction h2,
+.nutrition h2 {
+  color: var(--Nutmeg);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ingredients,
+.instruction {
+  border-bottom: 1px solid var(--LightGrey);
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--LightGrey);
+}
+
+span {
+  font-family: var(--outfit);
+  font-weight: 700;
+  color: var(--WengeBrown);
+}
+
+.quantity {
+  color: var(--DarkRaspberry);
+}
+
+.nutrition {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: rgb(87, 14, 155);
+  }
+  .container {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .recipe_container {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/* @media (max-width:670px){
+  body{
+    background-color: blue;
+  }
 } */
